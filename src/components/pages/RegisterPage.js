@@ -1,5 +1,7 @@
 import React from 'react'
+import axios from "axios";
 import { Link } from 'react-router-dom'
+import '../../Style/login.css'
 
 import '../../App.css'
 
@@ -9,7 +11,7 @@ export default function SignUpPage() {
         <div className="text-center m-5-auto">
             <h2>Join us</h2>
             <h5>Create your personal account</h5>
-            <form action="/home">
+            <div className='login'>
                 <p>
                     <label>Username</label><br/>
                     <input type="text" name="first_name" required />
@@ -34,9 +36,9 @@ export default function SignUpPage() {
                     <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.
                 </p>
                 <p>
-                    <button id="sub_btn" type="submit">Register</button>
+                    <button id="sub_btn">Register</button>
                 </p>
-            </form>
+            </div>
             <footer>
                 <p><Link to="/">Back to Homepage</Link>.</p>
             </footer>
